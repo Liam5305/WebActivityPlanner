@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<div class="add_sidenav">
+    
+    <div class="tf_logo">
+            <h2>TeamFitness</h2>
+    </div>
+    
+    <ul>
+        <a href="/" target="_self">Home</a>
+        <a href="/dashboard" target="_self">Dashboard</a>
+        <a href="/agenda" target="_self">Agenda</a>
+        <a href="/about" target="_self">About TF</a>
+    </ul>
+    <br>
+    <ul>
+        <a href="/overview" target="_self">Overview</a>
+        <a href="/schedule" target="_self">Schedule</a>
+        <a href="/tracking" target="_self">Tracking</a>
+    </ul>
+</div>
+
+<body class="container"> 
+
+<div class="dash-sub_boxs">
+    <h2> Reschedule your training! </h2>
+</div>
+
+<form method="post" role="form">
+ <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author"    
+name="author" placeholder="Written by" required> 
+    </div>
+
+ <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" class="form-control" id="type"
+name="Type" placeholder="Exercise/Brain_Exercise etc.." required>
+    </div>
+    
+    <div class="form-group">
+        <label for="exercise">Exercise:</label>
+        <input type="text" class="form-control" id="exercise"
+name="Exercise" placeholder="What Exercise" required>
+    </div>
+ 
+    <div class="form-group">
+        <label for="period">Period:</label>
+        <input type="text" class="form-control" id="period"
+name="Period" placeholder="How Long?" required>
+    </div>
+
+    <div class="form-group">
+        <label for="newDate">New Date:</label>
+        <input type="text" class="form-control" id="newDate"
+name="New Date" placeholder="What is the New Date?" required>
+
+    <div class="form-group">
+        <input type="submit" value="Reschedule" class="btn btn-primary">
+    </div>
+</form>
+
+</body>
+</html>

@@ -1,0 +1,36 @@
+{
+  "name": "webcw2",
+  "version": "1.0.0",
+  "description": "webdevcw2",
+  "main": "index.js",
+  "scripts": {
+    "build": "node index.js",
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [
+    "node.js",
+    "express",
+    "cw2"
+  ],
+  "author": "liam rutherford",
+  "license": "ISC",
+  "dependencies": {
+    "bcrypt": "^5.0.1",
+    "body-parser": "^1.19.0",
+    "connect-ensure-login": "^0.1.1",
+    "express": "^4.17.1",
+    "express-session": "^1.17.1",
+    "mustache": "^4.1.0",
+    "mustache-express": "^1.3.0",
+    "nedb": "^1.8.0",
+    "nodemon": "^2.0.7",
+    "passport": "^0.4.1",
+    "passport-local": "^1.0.0",
+    "password": "^0.1.1",
+    "path": "^0.12.7"
+  },
+  "repository": {
+    "type": "git",
+    "url" : "git+https://github.com/Liam5305/CW1_Repo.git"
+  }
+}

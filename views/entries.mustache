@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+    
+<head>
+    {{>header}}
+</head>
+
+<body>
+
+    <h1>{{title}}</h1>
+    <br>
+    {{#entries}}
+    <br>
+        <body class="container">
+        <div>
+            {{type}}
+        </div>
+        <div>
+            {{exercise}}
+        </div>
+        <div>
+            {{period}}
+        </div>
+        <div>
+            {{date}}
+        <div>
+            Added by <a href="/posts/?author={{author}}">{{author}}</a>
+        </div>
+    <br>
+        <input type="checkbox" id="complete?" name="complete?" value="Completed?">
+        <label for="complete?"> Have you completed this?</label>
+    <br>
+        <div class="edit-btn">
+        <a href="/edit" class="btn btn-primary">
+        Edit Entry
+        </a>
+    </div>
+    <br>
+    <div class="delete-btn">
+        <a href="/delete" class="btn btn-secondary">
+        Delete Entry
+        </a>
+    </div>
+    <br>
+    <div class="share-btn">
+        <a href="/share" class="btn btn-primary">
+        Share Training Log
+        </a>
+    </div>
+    {{/entries}} {{^entries}} No entries yet :-(. {{/entries}}
+    
+    <br>
+    <div class="new-btn">
+        <a href="/new" class="btn btn-primary">
+        Add a new workout
+        </a>
+    </div>
+    <br>
+    <div class="res-btn">
+        <a href="/reschedule" class="btn btn-primary">
+        Reschedule a workout
+        </a>
+    </div>
+</body>
+</html>

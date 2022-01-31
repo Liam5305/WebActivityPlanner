@@ -1,0 +1,48 @@
+<head>
+<!DOCTYPE html>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>{{title}}</title>
+<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+<link rel="stylesheet" href="./css/styles.css">
+</head>
+
+<body>
+
+<header>
+    <div class="sidenav">
+        
+        <div class="tf_logo">
+            <h2>TeamFitness</h2>
+        </div>
+        
+        <ul>
+            <a href="/" target="_self">Home</a>
+            <a href="/dashboard" target="_self">Dashboard</a>
+            <a href="/agenda" target="_self">Agenda</a>
+            <a href="/about" target="_self">About TF</a>
+            <br>
+            <br>
+            <br>
+            <br>
+            <br>
+            {{#user}}
+                <a id="logout" href="/logout" class="btn btn-primary">
+                    Sign out
+                </a>
+            {{/user}}
+        </ul>
+    </div>
+</header>
+<div class="text-right" style="margin-bottom: 1em;">
+    {{^user}}
+        <a id="login" href="/login" class="btn btn-primary">
+            Sign in
+        </a>
+        <a id="login" href="/register" class="btn btn-primary">
+            Register
+        </a>
+    {{/user}}
+</div>
+</body>
+</html>

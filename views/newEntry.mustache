@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    {{>header}}
+</head>
+
+<body class="container"> <h3>Write a new entry!</h3>
+
+<form method="post" role="form">
+ <div class="form-group">
+        <label for="author">Author</label>
+        <input type="text" class="form-control" id="author"    
+name="author" placeholder="Written by" required> 
+    </div>
+
+ <div class="form-group">
+        <label for="type">Type:</label>
+        <input type="text" class="form-control" id="type"
+name="Type" placeholder="Exercise/Brain_Exercise etc.." required>
+    </div>
+    
+    <div class="form-group">
+        <label for="exercise">Exercise:</label>
+        <input type="text" class="form-control" id="exercise"
+name="Exercise" placeholder="What Exercise" required>
+    </div>
+ 
+    <div class="form-group">
+        <label for="period">Period:</label>
+        <input type="text" class="form-control" id="period"
+name="Period" placeholder="How Long?" required>
+    </div>
+
+    <div class="form-group">
+        <input type="submit" value="Back" class="btn btn-primary">
+    </div>
+    <div class="form-group">
+        <input type="submit" value="Post entry" class="btn btn-primary">
+    </div>
+</form>
+</body>
+</html>
